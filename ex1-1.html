@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ CSS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styletext.css">
     <style>
         h1{
             color: rgb(42, 165, 108); /*เปลี่ยนสี*/
@@ -40,14 +41,37 @@
             color: rgb(238, 255, 0);
             font-size: 16pt;
         }
+        body{
+            font-size: 20px;
+        }
+        div{
+            font-size: 1.5em;
+            background-color: #248f81;
+        }
     </style>
 </head>
 <body>
+    <span style="font-size: 1rem;">กำหนดขนาดตัวอักษร 1rem</span>
+    <span style="font-size: 16px;">กำหนดขนาดตัวอักษร 16px</span>
+    <span style="font-size: 2rem;">กำหนดขนาดตัวอักษร 2rem</span>
     <h1>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ CSS</h1>
     <div class="myid">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem aperiam qui laudantium nam, a dolorum amet ut in accusamus at excepturi cumque necessitatibus unde neque animi reiciendis provident corporis fuga.</p>
+        
     </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsum saepe, voluptatem ea nisi veritatis ab eligendi! Delectus aspernatur ullam dolor distinctio fugit nesciunt! Voluptate numquam doloribus nam voluptas soluta.</p>
+    <div>
+        ตัวอักษร 1em = 30 px 30px * 1.5 เท่า = 45px
+        <div>
+            ตัวอักษรที่เป็นลูกของ div 45px * 1.5 เท่า = 67.5px
+            <div>
+                ตัวอักษรที่เป็นลูกของ div
+                <div>
+                    ตัวอักษรที่เป็นลูกของ div
+                </div>
+            </div>
+        </div>
         <h2 style="font-weight: bold;">การใช้งาน <span style="background-color: yellow;">External Style</span></h2>
+    </div>
+    <h3>ข้อความ Tag H3</h3>
 </body>
 </html>
