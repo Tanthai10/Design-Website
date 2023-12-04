@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การเลือกเอลิเม้นด้วย Attribute Selector</title>
+    <style>
+        h2[title="aTitle"]{
+            color: maroon;
+        }
+        img{
+            width: 300px;
+        }
+        img.pic3[alt]{
+            border: solid blue 2px;
+        }
+        h3[title~="title"]{
+            color: hotpink;
+        }
+        h3[title~="job"]{
+            font-style: italic;
+        }
+        h3[title~="joy"]{
+            text-decoration: underline;
+        }
+        p[lang|="en"]{
+            background-color: blueviolet;
+        }
+        a[href^=https]{
+            background-image: url(arrow.png);
+            background-repeat: on-repeat;
+            background-position: right;
+            padding-right: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1><center>การเลือกเอลิเม้นด้วย Attribute Selector</center></h1>
+    <h2 title="aTitle">ไม่มี Attribute ชื่อ Title</h2>
+    <h2 title="firstTitle">มี Attribute ชื่อ Title</h2>
+    <h1><center>การใช้งาน Attribute Selector</center></h1>
+    <div>
+        <article>
+            <h2>First Set</h2>
+            <img class="pic1" src="img/1.jpg" alt="apartment">
+            <img class="pic2" src="img/2.jpg" alt="inside1">
+            <img class="pic3" src="img/3.jpg" alt="inside2">
+        </article>
+        <hr>
+        <article>
+            <h2>Second Set</h2>
+            <img class="pic4" src="img/4.jpg" alt="apartment2">
+            <img class="pic5" src="img/5.jpg" alt="apartment3">
+            <img class="pic6" src="img/6.jpeg" alt="inside3">
+        </article>
+    </div>
+    <h3 title="title">ตัวที่ 1 ทดสอบการใช้งาน Attribute~=value</h3>
+    <h3 title="job">ตัวที่ 2 ทดสอบการใช้งาน Attribute~=value</h3>
+    <h3 title="joy">ตัวที่ 3 ทดสอบการใช้งาน Attribute~=value</h3>
+    <div>
+        <p lang="en">Hello</p>
+        <p lang="en-us">Hi</p>
+        <p lang="es">Hola</p>
+        <p lang="th">สวัสดี</p>
+    </div>
+    <h2><center>การใช้ Attribute^=value</center></h2>
+    <ul>
+        <li><a href="https://www.google.co.th/">กูเกิ้ล</a></li>
+        <li><a href="https://www.apple.com/">แอปเปิล</a></li>
+        <li><a href="https://www.microsoft.com/">ไมโครซอฟต์</a></li>
+    </ul>
+</body>
+</html>
