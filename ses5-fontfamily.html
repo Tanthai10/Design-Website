@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กำหนดฟอนต์ด้วย font family</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kanit:wght@300&display=swap');
+        @font-face {
+            font-family: myfont;
+            src: url(font/THSarabunNew/THSarabunNew.ttf) format("truetype");
+        }
+        h1{
+            font-family: kanit;
+            color: orangered;
+            text-shadow: 6px 7px 8px #666, 0px -1px 0px #bbb;
+            font-weight: 700;
+            /* -webkit-text-stroke: 0.2px pink; */
+            text-decoration: underline ; /* การขีดเส้นด้วยลักษณะต่างๆ none underline overlime line-through */
+            text-decoration-color: red;
+        }
+        div{
+            font-family: inter;
+        }
+        p{
+            font-family: myfont;
+            font-size: 23px;
+            font-style: oblique;
+            color: purple;
+        }
+        p.myclass{
+            font-family: myfont;
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight: lighter;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #3e3e3e;
+            padding: 2px;
+            line-height: 1.5.rem;
+        }
+        span{
+            color: red;
+            background-color: yellow;
+            padding: 1px;
+            line-height: 120%;
+        }
+    </style>
+</head>
+<body>
+    <h1>กำหนดฟอนต์ด้วย font family</h1>
+    <p>การกำหนดพอนต์ที่เหมาะสมกับต้วอักษรบนเว็บเพจ
+        เป็นส่วนหนึ่งที่ทำให้เว็บของเราดูหน้าสนใจมากขึ้น</p>
+    <h2>การกำหนดฟอนต์แบบพิเศษด้วย @font-face</h2>
+    <p>
+        เป็นคุณสมบัติที่ให้เราสามารถเลือกใช้งานฟ้อนต์ได้อิสระมากขึ้น
+    </p>
+    <div>
+        รูปแบบการใช้ font ภายนอกโดยการดึงจาก Google font
+    </div>
+    <div id="mainDiv">
+        <h3>Fiction Hit</h3>
+        <p>Perter Fan have been waiting for his normal nose all to his life.</p>
+        <h3>Sporn News</h3>
+        <p><span>Man City</span> Knocked <span>Arsenal</span> 3:1 yesterday.</p>
+    </div>
+</body>
+</html>
