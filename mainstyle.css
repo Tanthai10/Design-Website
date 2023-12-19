@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kanit:wght@800&display=swap');
 @font-face {
     font-family: myfont;
     src: url("font/THSarabunNew/THSarabunNew.ttf") format("truetype");
@@ -50,11 +50,11 @@ h1{
     margin: 15px;
     box-shadow: 5px 5px 20px black;
 }
-.box{
+/* .box{
     width: 30%;
     display: inline-block;
     margin: auto;
-}
+} */
 /* .box-1{
 
 }
