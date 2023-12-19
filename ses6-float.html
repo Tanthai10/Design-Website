@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การจัดวางเลย์เอาท์บนเว็บเพจด้วย Float</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box-1 img{
+            float: left;
+        }
+        .box-2 img{
+            float: right;
+        }
+        .box-3 img{
+            float: none;
+        }
+        .mycontainer{
+            background-color: #333;
+            color: white;
+            width: 960px;
+            margin: 30px auto;
+        }
+        .box{
+            background-color: blanchedalmond;
+            color: black;
+            border: 1px solid #f0f;
+            padding: 10px 30px;
+            margin: 15px;
+            /* border-width: 3px;
+            border-color: blueviolet; */
+        }
+        #box-1{
+            float: left;
+            width: 50%;
+        }
+        #box-2{
+            float: right;
+            width: 30%;
+        }
+        #box-3{
+            float: none;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>การจัดวางเลย์เอาท์บนเว็บเพจด้วย Float</h1>
+    <ul>
+        <li>
+            left, right (ให้ลอยอยู่ทางด้านซ้ายและขวาตามลำดับ)
+        </li>
+        <li>
+            inherit ลอยตาม parent element
+        </li>
+        <li>
+            none ไม่มีการลอบ (default)
+        </li>
+    </ul>
+    <ul> clear ไม่อนุญาตให้มีการลอยของ element ค่าที่กำหนดได้ คือ
+        <li>
+            left, right (ไม่อนุญาตให้มีการลอยอยู่ทางด้านซ้ายและขวา)
+        </li>
+        <li>
+            both (ไม่อนุญาตให้ลอยของทั้งสองด้าน)
+        </li>
+    </ul>
+    <div class="box-1">
+        <p>
+            <img src="img/1.jpg" alt="" style="width: 100px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora id aliquid perspiciatis pariatur unde minus quidem fugiat, sequi non incidunt accusamus, qui recusandae necessitatibus! Quas ea doloremque et ut architecto.
+        </p>
+    </div>
+    <div class="box-2">
+        <p>
+            <img src="img/1.jpg" alt="" style="width: 100px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora id aliquid perspiciatis pariatur unde minus quidem fugiat, sequi non incidunt accusamus, qui recusandae necessitatibus! Quas ea doloremque et ut architecto.
+        </p>
+    </div>
+    <div class="box-3">
+        <p>
+            <img src="img/1.jpg" alt="" style="width: 100px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora id aliquid perspiciatis pariatur unde minus quidem fugiat, sequi non incidunt accusamus, qui recusandae necessitatibus! Quas ea doloremque et ut architecto.
+        </p>
+    </div>
+<hr>
+    <div class="mycontainer">
+        <div class="box">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dolore. Repellendus illum cum architecto sapiente illo expedita porro quis sequi, ut nemo blanditiis saepe at impedit cupiditate repudiandae iure placeat.</p>
+        </div>
+        <div class="box">
+            <h2>Title 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dolore. Repellendus illum cum architecto sapiente illo expedita porro quis sequi, ut nemo blanditiis saepe at impedit cupiditate repudiandae iure placeat.</p>
+        </div>
+        <div class="box">
+            <h2>Title 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dolore. Repellendus illum cum architecto sapiente illo expedita porro quis sequi, ut nemo blanditiis saepe at impedit cupiditate repudiandae iure placeat.</p>
+        </div>
+    </div>
+</body>
+</html>
