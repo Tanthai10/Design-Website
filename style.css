@@ -20,3 +20,8 @@ body{
     height: 500px;
     margin: 800px 10px 10px 500px;
 }
+p{
+    font-size: 23px;
+    font-style: oblique;
+    color: purple;
+}
