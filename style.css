@@ -10,7 +10,7 @@ h3{
     color: blueviolet;
 }
 body{
-    background-color: black;
+    background-image: url(/img/BG.jpg);
 }
 .box{
     background-color: lightgrey;
